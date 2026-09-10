@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Vaios Konstantinos Aggelousis">
 <title>Products | Digimations</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -15,64 +16,108 @@
       <span class="brand-mark" aria-hidden="true"></span>
       <span class="brand-text">
         <span class="brand-name">Digimations</span>
-        <span class="brand-tag">Digital &amp; Wireless Applications</span>
+        <span class="brand-tag" data-i18n="brand.tag">Digital &amp; Wireless Applications</span>
       </span>
     </a>
-    <nav class="main-nav">
+
+<nav class="main-nav" aria-label="Primary">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#company">Company</a></li>
-        <li><a href="products.html" style="border-bottom-color: var(--accent);">Products</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="index.html#company" data-i18n="nav.company">Company</a></li>
+        <li><a href="products.html" style="border-bottom-color: var(--accent);" data-i18n="nav.products">Products</a></li>
+        <li><a href="index.html#support" data-i18n="nav.support">Support</a></li>
+        <li><a href="index.html#news" data-i18n="nav.news">News</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="header-controls">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+        <span class="lang-option" data-lang="en">EN</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-option" data-lang="gr">EL</span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+      <button class="nav-burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
 <main class="page-container">
   <div class="page-header">
-    <p class="section-kicker">Equipment Catalog</p>
-    <h1>Five product lines, one engineering team.</h1>
-    <p>Select a category to view technical specifications, hardware revisions, and mounting dimensions.</p>
+    <p class="section-kicker" data-i18n="catalog.kicker">Equipment Catalog</p>
+    <h1 data-i18n="catalog.title">Five product lines, one engineering team.</h1>
+    <p data-i18n="catalog.desc">Select a category to view technical specifications, hardware revisions, and mounting dimensions.</p>
   </div>
 
   <div class="category-grid">
-    <!-- Category 1 -->
+    <!-- Elevator Displays -->
     <a href="category-elevator.html" class="category-card">
       <div class="category-image">
-        <img src="https://placehold.co/600x400/161C23/E8A33D?text=Elevator+Displays\nTFT+%26+Matrix" alt="Elevator Displays">
+        <img src="https://placehold.co/600x400/161C23/E8A33D?text=Elevator+Displays" alt="Elevator Displays">
       </div>
       <div class="category-content">
         <span class="product-code">ELV / FLD / MTX</span>
-        <h3>Elevator Display Products</h3>
-        <p>Floor position indicators from 2.4" to 7.0", touch and remote-control units.</p>
-        <span class="btn-text">View Category &rarr;</span>
+        <h3 data-i18n="products.elevator.title">Elevator Display Products</h3>
+        <p data-i18n="products.elevator.copy">Floor position indicators from 2.4" to 7.0", touch and remote-control units.</p>
+        <span class="btn-text" data-i18n="catalog.viewCategory">View Category &rarr;</span>
       </div>
     </a>
 
-    <!-- Category 2 -->
+    <!-- Smart Thermostats -->
     <a href="category-thermostats.html" class="category-card">
       <div class="category-image">
-        <img src="https://placehold.co/600x400/161C23/E8A33D?text=Smart+Thermostats\nBACnet+%26+Modbus" alt="Smart Thermostats">
+        <img src="https://placehold.co/600x400/161C23/E8A33D?text=Smart+Thermostats" alt="Smart Thermostats">
       </div>
       <div class="category-content">
         <span class="product-code">TH1</span>
-        <h3>Smart Thermostats</h3>
-        <p>Temperature adjustment, time programming, and radio-network operation.</p>
-        <span class="btn-text">View Category &rarr;</span>
+        <h3 data-i18n="products.thermostat.title">Smart Thermostats</h3>
+        <p data-i18n="products.thermostat.copy">Temperature adjustment, time programming, energy-consumption measurement.</p>
+        <span class="btn-text" data-i18n="catalog.viewCategory">View Category &rarr;</span>
       </div>
     </a>
 
-    <!-- Category 3 -->
+    <!-- Clock Tower -->
+    <a href="category-clock.html" class="category-card">
+      <div class="category-image">
+        <img src="https://placehold.co/600x400/161C23/E8A33D?text=Clock+Tower" alt="Clock Tower Products">
+      </div>
+      <div class="category-content">
+        <span class="product-code">CLK</span>
+        <h3 data-i18n="products.clock.title">Clock Tower Products</h3>
+        <p data-i18n="products.clock.copy">Tower clocks and bell systems, built for long-term outdoor installation.</p>
+        <span class="btn-text" data-i18n="catalog.viewCategory">View Category &rarr;</span>
+      </div>
+    </a>
+
+    <!-- Wireless -->
     <a href="category-wireless.html" class="category-card">
       <div class="category-image">
-        <img src="https://placehold.co/600x400/161C23/E8A33D?text=Wireless+Controls\nSub-1GHz+RF" alt="Wireless Controls">
+        <img src="https://placehold.co/600x400/161C23/E8A33D?text=Wireless+Apps" alt="Wireless Applications">
       </div>
       <div class="category-content">
         <span class="product-code">RF</span>
-        <h3>Wireless Applications</h3>
-        <p>Radio-network devices for remote monitoring and control across industrial sites.</p>
-        <span class="btn-text">View Category &rarr;</span>
+        <h3 data-i18n="products.wireless.title">Wireless Applications</h3>
+        <p data-i18n="products.wireless.copy">Radio-network devices for remote monitoring and control across industrial sites.</p>
+        <span class="btn-text" data-i18n="catalog.viewCategory">View Category &rarr;</span>
+      </div>
+    </a>
+
+    <!-- Embedded -->
+    <a href="category-embedded.html" class="category-card">
+      <div class="category-image">
+        <img src="https://placehold.co/600x400/161C23/E8A33D?text=Embedded+Modules" alt="Embedded Modules">
+      </div>
+      <div class="category-content">
+        <span class="product-code">ECM</span>
+        <h3 data-i18n="products.embedded.title">Embedded Control Modules</h3>
+        <p data-i18n="products.embedded.copy">Custom embedded boards and control logic built into partner products.</p>
+        <span class="btn-text" data-i18n="catalog.viewCategory">View Category &rarr;</span>
       </div>
     </a>
   </div>
@@ -80,8 +125,8 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <span>&copy; 2026 Digimations.</span>
-    <span>Athens, Greece</span>
+    <span>&copy; 2026 Digimations. <span data-i18n="footer.rights">All rights reserved.</span></span>
+    <span data-i18n="footer.made">Athens, Greece</span>
   </div>
 </footer>
 

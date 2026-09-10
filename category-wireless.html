@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elevator Displays | Digimations</title>
+<meta name="author" content="Vaios Konstantinos Aggelousis">
+<title>Wireless Applications | Digimations</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- UNIFIED HEADER WITH TOGGLES -->
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html">
@@ -20,7 +20,7 @@
       </span>
     </a>
 
-<nav class="main-nav" aria-label="Primary">
+    <nav class="main-nav" aria-label="Primary">
       <ul>
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li><a href="index.html#company" data-i18n="nav.company">Company</a></li>
@@ -51,27 +51,53 @@
 <main class="page-container">
   <div class="page-header">
     <a href="products.html" class="back-link" data-i18n="catalog.back">&larr; Back to Categories</a>
-    <h1 data-i18n="products.elevator.title">Elevator Display Products</h1>
-    <p data-i18n="cat.elv.desc">Floor position indicators, touch units, and dot-matrix arrow displays engineered for CANopen and RS-485 networks.</p>
+    <h1 data-i18n="products.wireless.title">Wireless Applications</h1>
+    <p data-i18n="products.wireless.copy">Radio-network devices for remote monitoring and control across industrial sites.</p>
   </div>
 
   <div class="product-list">
     <article class="detailed-product">
       <div class="dp-gallery">
-        <img src="https://placehold.co/800x600/0A0D11/E8A33D?text=[+ELV70+Faceplate+Photo+]" alt="ELV70 TFT Display" class="main-photo">
+        <img src="https://placehold.co/800x600/0A0D11/E8A33D?text=[+RF-REC8+Receiver+Relay+]" alt="RF-REC8 8-Channel Industrial Receiver" class="main-photo">
       </div>
       
       <div class="dp-info">
-        <span class="tech-badge">SKU: ELV70</span>
-        <h2 data-i18n="prod.elv70.title">ELV70 7.0" TFT Floor Position Indicator</h2>
-        <p class="dp-desc" data-i18n="prod.elv70.desc">Full-color 7-inch TFT display engineered for elevator car and landing operating panels. Features dynamic floor arrow synthesis and multi-bus support.</p>
+        <span class="tech-badge">SKU: RF-REC8</span>
+        <h2>RF-REC8 8-Channel Industrial Receiver</h2>
+        <p class="dp-desc">Long-range wireless switching receiver for elevators, garage gates, and plant automation.</p>
         
         <div class="dp-specs">
           <div class="spec-group">
-            <h4 data-i18n="modal.dimensions">Dimensions &amp; Mounting</h4>
+            <h4 data-i18n="modal.dimensions">Dimensions &amp; Mounting Specs</h4>
             <dl class="spec-pairs">
-              <dt>Outer Bezel (W×H×D)</dt><dd>198 × 112 × 18 mm</dd>
-              <dt>Bus Interface</dt><dd>CAN 2.0B / RS-485</dd>
+              <dt>Dimensions</dt><dd>115 × 90 × 40 mm</dd>
+              <dt>Channels</dt><dd>8 Independent Form-C SPDT</dd>
+              <dt>Frequency</dt><dd>433.92 MHz / 868 MHz FSK</dd>
+            </dl>
+          </div>
+        </div>
+        
+        <a href="index.html#contact" class="btn btn-primary mt-4" data-i18n="catalog.quote">Request Quote</a>
+      </div>
+    </article>
+
+    <article class="detailed-product">
+      <div class="dp-gallery">
+        <img src="https://placehold.co/800x600/0A0D11/E8A33D?text=[+RF-Node+Telemetry+Hub+]" alt="RF-Node Telemetry Hub" class="main-photo">
+      </div>
+      
+      <div class="dp-info">
+        <span class="tech-badge">SKU: RF-NODE</span>
+        <h2>RF-Node Telemetry Hub</h2>
+        <p class="dp-desc">Industrial IoT radio transceiver connecting field sensors to SCADA networks.</p>
+        
+        <div class="dp-specs">
+          <div class="spec-group">
+            <h4 data-i18n="modal.dimensions">Dimensions &amp; Mounting Specs</h4>
+            <dl class="spec-pairs">
+              <dt>Dimensions</dt><dd>80 × 80 × 35 mm</dd>
+              <dt>RF Range</dt><dd>Up to 3 km Line-of-sight</dd>
+              <dt>Protocols</dt><dd>Sub-1GHz Mesh / Modbus bridge</dd>
             </dl>
           </div>
         </div>
