@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Vaios Konstantinos Aggelousis">
-<title>Elevator Products | Digimations</title>
+<title>ELV24-H 2.4" | Digimations</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -55,7 +55,7 @@
   <aside class="sidebar-menu">
     <div class="sidebar-title">Elevator Menu</div>
     <ul class="sidebar-nav">
-      <li><a href="product-elv24h.html">ELV24H 2.4"</a></li>
+      <li><a href="product-elv24h.html" class="active">ELV24H 2.4"</a></li>
       <li><a href="#">ELV2x24 2.4"x2</a></li>
       <li><a href="#">ELV32H 3.2"</a></li>
       <li><a href="#">ELV32-LC 3.2"</a></li>
@@ -71,31 +71,45 @@
     </ul>
   </aside>
 
-  <!-- Main Content Area -->
+  <!-- Product Details Area -->
   <div class="catalog-content">
-    <div class="page-header" style="margin-bottom: 40px;">
-      <h1 data-i18n="products.elevator.title">Elevator Products</h1>
-    </div>
+    <a href="category-elevator.html" class="back-link">&larr; Back to Elevator Products</a>
+    
+    <article class="detailed-product" style="margin-top: 20px;">
+      <div class="dp-gallery">
+        <img src="https://placehold.co/800x600/0A0D11/E8A33D?text=[+ELV24H+Photo+]" alt="ELV24H 2.4 Screen" class="main-photo">
+        <div class="dp-thumbnails" style="display: flex; gap: 10px; margin-top: 10px;">
+          <!-- Icons mimicking the magnifying glass, PDF, and email from the screenshot -->
+          <span style="font-size: 1.5rem; cursor: pointer;" title="Zoom">🔍</span>
+          <span style="font-size: 1.5rem; cursor: pointer;" title="Download PDF">📄</span>
+          <span style="font-size: 1.5rem; cursor: pointer;" title="Email Inquiry">✉️</span>
+        </div>
+      </div>
+      
+      <div class="dp-info">
+        <span class="tech-badge">TFT-LCD</span>
+        <h2>ELV24-H. Screen 2.4"</h2>
+        <p class="dp-desc">320x240 pixels cabine floor indication.</p>
+        
+        <div class="dp-specs">
+          <div class="spec-group">
+            <h4>Features & Specifications</h4>
+            <ul class="fixes-list" style="margin-top: 12px; gap: 8px; display: flex; flex-direction: column;">
+              <li>Choice of pre-installed digits, arrows, themes.</li>
+              <li>Remote control operation.</li>
+              <li>Hardware Diagnostics.</li>
+            </ul>
+          </div>
 
-    <div class="subcategory-grid">
-      <!-- TFT LCD Category -->
-      <a href="product-elv24h.html" class="subcat-card">
-        <h3>TFT LCD</h3>
-        <img src="https://placehold.co/400x300/161C23/E8A33D?text=TFT+Display" alt="TFT LCD Displays" class="subcat-image">
-      </a>
-
-      <!-- 7 SEGMENT Category -->
-      <a href="#" class="subcat-card">
-        <h3>7 SEGMENT</h3>
-        <img src="https://placehold.co/400x300/161C23/E8A33D?text=7+Segment" alt="7 Segment Displays" class="subcat-image">
-      </a>
-
-      <!-- MATRIX Category -->
-      <a href="#" class="subcat-card">
-        <h3>MATRIX</h3>
-        <img src="https://placehold.co/400x300/161C23/E8A33D?text=Dot+Matrix" alt="Matrix Displays" class="subcat-image">
-      </a>
-    </div>
+          <div class="spec-group">
+            <h4 data-i18n="modal.dimensions">Dimensions & Mounting</h4>
+            <dl class="spec-pairs">
+              <dt>Product Dimensions</dt><dd>65mm x 70mm</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </article>
   </div>
 </main>
 

@@ -587,3 +587,107 @@ address strong{ color: var(--ink); }
     aspect-ratio: 4/3;
   }
 }
+
+/* ---------------------------------------------
+   Catalog Sidebar Layout (Categories & Products)
+--------------------------------------------- */
+.catalog-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 24px 100px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 0;
+  align-self: start;
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--steel);
+  text-transform: uppercase;
+  padding: 0 20px 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  background: var(--surface-sunken);
+  color: var(--accent);
+  border-left: 3px solid var(--accent);
+  padding-left: 17px;
+}
+
+/* Subcategory Grids (TFT, 7-Segment, Matrix) */
+.subcategory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.subcat-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+
+.subcat-card:hover {
+  border-color: var(--accent);
+}
+
+.subcat-card h3 {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.subcat-image {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  background: var(--surface-sunken);
+  border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+  .catalog-container {
+    grid-template-columns: 1fr;
+  }
+  .sidebar-menu {
+    position: static;
+  }
+}
