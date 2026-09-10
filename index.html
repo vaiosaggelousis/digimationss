@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digimations — Digital &amp; Wireless Applications</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">
+        <span class="brand-name">Digimations</span>
+        <span class="brand-tag" data-i18n="brand.tag">Digital &amp; Wireless Applications</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#company" data-i18n="nav.company">Company</a></li>
+        
+<li><a href="products.html" data-i18n="nav.products">Products</a></li>
+
+        <li><a href="#support" data-i18n="nav.support">Support</a></li>
+        <li><a href="#news" data-i18n="nav.news">News</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-controls">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+        <span class="lang-option" data-lang="en">EN</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-option" data-lang="gr">EL</span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+      <button class="nav-burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME / HERO WITH TECHNICAL SCHEMATIC HUD -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="tech-badge">
+        <span class="indicator-dot"></span>
+        <span data-i18n="hero.since">Engineering digital &amp; wireless devices since 2009</span>
+      </div>
+      <h1 data-i18n="hero.headline">Displays and control<br>modules built for<br>the field.</h1>
+      <p class="hero-copy" data-i18n="hero.copy">Digimations designs and manufactures elevator position indicators, wireless controls, smart thermostats and embedded modules — engineered in Athens, installed worldwide.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary" data-i18n="hero.cta1">View products</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">Talk to us</a>
+      </div>
+    </div>
+
+    <!-- Redesigned Hardware Schematic Card -->
+    <div class="hero-graphic hardware-schematic">
+      <div class="schematic-header">
+        <div class="schematic-label-group">
+          <span class="schematic-code">UNIT: ELV70-CAN/REV-B</span>
+          <span class="schematic-status">SYS_OK · 24V DC</span>
+        </div>
+        <div class="schematic-dim-tag">198 × 112 mm</div>
+      </div>
+
+      <div class="schematic-body">
+        <div class="cad-canvas">
+          <div class="cad-grid-lines"></div>
+          
+          <div class="module-faceplate">
+            <div class="display-panel">
+              <div class="display-content">
+                <span class="floor-number">14</span>
+                <span class="arrow-indicator">▲</span>
+              </div>
+              <span class="display-sub">CANopen Lift / CiA 417</span>
+            </div>
+
+            <!-- Interactive Pin Callouts -->
+            <button class="cad-pin pin-1" title="Power: 12-24V DC" data-pin-info="12-24V DC Isolated Power">
+              <span class="pin-marker"></span>
+              <span class="pin-tag">VCC / GND</span>
+            </button>
+            <button class="cad-pin pin-2" title="CAN High/Low Bus" data-pin-info="Differential CAN Bus ISO 11898">
+              <span class="pin-marker"></span>
+              <span class="pin-tag">CAN_H / L</span>
+            </button>
+            <button class="cad-pin pin-3" title="RS485 Half-Duplex" data-pin-info="RS485 Bus / Modbus RTU">
+              <span class="pin-marker"></span>
+              <span class="pin-tag">RS-485</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="schematic-footer">
+          <div class="spec-chip">
+            <span class="spec-name">BUS PROTOCOL</span>
+            <span class="spec-value">CAN 2.0B / RS-485</span>
+          </div>
+          <div class="spec-chip">
+            <span class="spec-name">OPERATING TEMP</span>
+            <span class="spec-value">-20°C to +70°C</span>
+          </div>
+          <div class="spec-chip">
+            <span class="spec-name">BEZEL FINISH</span>
+            <span class="spec-value">Anodized Alum / IP54</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANY -->
+  <section id="company" class="section company">
+    <div class="section-inner two-col">
+      <div class="col-label">
+        <p class="section-kicker" data-i18n="company.kicker">Company</p>
+        <h2 data-i18n="company.title">Established 2009, by working engineers.</h2>
+      </div>
+      <div class="col-body">
+        <p data-i18n="company.p1">Digimations was founded in 2009 by a team of experienced engineers working in electronic and industrial design. The company holds deep knowledge across automation, telematics, and telecom &amp; radio communications.</p>
+        <p data-i18n="company.p2">We've designed and produced a wide range of consumer and industrial devices, and we provide technical support and consultancy directly to large companies. The aim stays the same as it was on day one: keep improving the products and grow what we build.</p>
+        <dl class="company-facts">
+          <div><dt data-i18n="company.fact1.k">Founded</dt><dd>2009</dd></div>
+          <div><dt data-i18n="company.fact1.k2">Based</dt><dd data-i18n="company.fact1.v2">Athens, Greece</dd></div>
+          <div><dt data-i18n="company.fact1.k3">Focus</dt><dd data-i18n="company.fact1.v3">Automation · Telematics · Radio</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="products" class="section products">
+    <div class="section-inner">
+      <p class="section-kicker" data-i18n="products.kicker">Products</p>
+      <h2 data-i18n="products.title">Five product lines, one engineering team.</h2>
+
+      <div class="product-grid">
+
+        <article class="product-card">
+          <p class="product-code">ELV / FLD / MTX</p>
+          <h3 data-i18n="products.elevator.title">Elevator Display Products</h3>
+          <p data-i18n="products.elevator.copy">Floor position indicators from 2.4&quot; to 7.0&quot;, touch and remote-control units, 7-segment and dot-matrix arrow displays.</p>
+          <div class="product-skus">
+            <button type="button" class="btn-product-spec" data-product="elv70">ELV70 7.0&quot;</button>
+            <button type="button" class="btn-product-spec" data-product="elv47">ELV47 4.7&quot;</button>
+            <button type="button" class="btn-product-spec" data-product="mtx5889">MTX-5889</button>
+            <button type="button" class="btn-product-spec" data-product="fld5866">FLD-5866</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <p class="product-code">TH1</p>
+          <h3 data-i18n="products.thermostat.title">Smart Thermostats</h3>
+          <p data-i18n="products.thermostat.copy">Temperature adjustment, time programming, energy-consumption measurement, and radio-network operation.</p>
+          <div class="product-skus">
+            <button type="button" class="btn-product-spec" data-product="th1">TH1 Standard</button>
+            <button type="button" class="btn-product-spec" data-product="th1-din">TH1 DIN-Rail</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <p class="product-code">CLK</p>
+          <h3 data-i18n="products.clock.title">Clock Tower Products</h3>
+          <p data-i18n="products.clock.copy">Tower clocks and bell systems, built for long-term outdoor installation.</p>
+          <div class="product-skus">
+            <button type="button" class="btn-product-spec" data-product="clk100">CLK-100 Driver</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <p class="product-code">RF</p>
+          <h3 data-i18n="products.wireless.title">Wireless Applications</h3>
+          <p data-i18n="products.wireless.copy">Radio-network devices for remote monitoring and control across industrial sites.</p>
+          <div class="product-skus">
+            <button type="button" class="btn-product-spec" data-product="rf-rec8">RF-REC8</button>
+            <button type="button" class="btn-product-spec" data-product="rf-node">RF-Node Hub</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <p class="product-code">ECM</p>
+          <h3 data-i18n="products.embedded.title">Embedded Control Modules</h3>
+          <p data-i18n="products.embedded.copy">Custom embedded boards and control logic built into partner products.</p>
+          <div class="product-skus">
+            <button type="button" class="btn-product-spec" data-product="can-bridge">CAN Bridge</button>
+            <button type="button" class="btn-product-spec" data-product="custom-ecm">Custom ECM-01</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section id="support" class="section support">
+    <div class="section-inner two-col">
+      <div class="col-label">
+        <p class="section-kicker" data-i18n="support.kicker">Support</p>
+        <h2 data-i18n="support.title">Technical support &amp; consultancy.</h2>
+      </div>
+      <div class="col-body">
+        <p data-i18n="support.p1">Every installation gets direct access to the engineers who designed it — not a ticket queue. Reach out for install guidance, diagnostics, spare parts, or a custom modification to an existing product.</p>
+        <div class="support-actions">
+          <a href="#contact" class="link-arrow" data-i18n="support.cta">Request support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news" class="section news">
+    <div class="section-inner">
+      <p class="section-kicker" data-i18n="news.kicker">Company news</p>
+      <h2 data-i18n="news.title">Recent updates</h2>
+      <ul class="news-list">
+        <li>
+          <time datetime="2014-04">04.2014</time>
+          <span data-i18n="news.item1">New position indicator with arrows — DOT-MATRIX (10×14 dots).</span>
+        </li>
+        <li>
+          <time datetime="2014-03">03.2014</time>
+          <span data-i18n="news.item2">New position indicator with arrows — 7-Segment (FLD-5866).</span>
+        </li>
+        <li>
+          <time datetime="2014-02">02.2014</time>
+          <span data-i18n="news.item3">New position indicator with arrows — DOT-MATRIX (7×5 dots).</span>
+        </li>
+        <li>
+          <time datetime="2014-01">01.2014</time>
+          <span data-i18n="news.item4">New position indicator with arrows — 7-Segment (FLD-7884).</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="section-inner two-col">
+      <div class="col-label">
+        <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
+        <h2 data-i18n="contact.title">Get in touch.</h2>
+        <address>
+          <strong>Mixalis Kefalas</strong><br>
+          <span data-i18n="contact.addr1">Ag. Dimitrios, Athens</span><br>
+          <span data-i18n="contact.addr2">Attika, 17343, Greece</span><br><br>
+          <span data-i18n="contact.fax">Fax:</span> (+30) 210-9715679<br>
+          <span data-i18n="contact.mobile">Mobile:</span> (+30) 697-4047000<br>
+          <a href="mailto:info@digimations.com">info@digimations.com</a>
+        </address>
+      </div>
+      <div class="col-body">
+        <form class="contact-form" id="contactForm">
+          <label class="sr-only" for="cf-name" data-i18n="contact.form.name">Your name</label>
+          <input id="cf-name" name="name" type="text" data-i18n-placeholder="contact.form.name" placeholder="Your name" required>
+
+          <label class="sr-only" for="cf-email" data-i18n="contact.form.email">Your email</label>
+          <input id="cf-email" name="email" type="email" data-i18n-placeholder="contact.form.email" placeholder="Your email" required>
+
+          <label class="sr-only" for="cf-subject" data-i18n="contact.form.subject">Subject</label>
+          <input id="cf-subject" name="subject" type="text" data-i18n-placeholder="contact.form.subject" placeholder="Subject">
+
+          <label class="sr-only" for="cf-message" data-i18n="contact.form.message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" data-i18n-placeholder="contact.form.message" placeholder="Your message" required></textarea>
+
+          <button type="submit" class="btn btn-primary" data-i18n="contact.form.send">Send message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- PRODUCT DETAILS / SPECS MODAL DIALOG -->
+<div class="spec-modal" id="specModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="spec-modal-backdrop" id="modalBackdrop"></div>
+  <div class="spec-modal-window">
+    <div class="modal-header">
+      <div>
+        <span class="modal-sku-tag" id="modalSkuTag">ELV70</span>
+        <h3 class="modal-title" id="modalTitle">Product Technical Sheet</h3>
+      </div>
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+    </div>
+    
+    <div class="modal-body">
+      <!-- Media/Photo Area -->
+      <div class="modal-photo-box" id="modalPhotoBox">
+        <div class="photo-schematic-render" id="modalVisualRender"></div>
+      </div>
+
+      <!-- Detail Tabs/Grids -->
+      <div class="modal-info-pane">
+        <p class="modal-desc" id="modalDesc"></p>
+
+        <div class="info-section">
+          <h4 data-i18n="modal.dimensions">Dimensions &amp; Mounting</h4>
+          <dl class="spec-pairs" id="modalDimensions"></dl>
+        </div>
+
+        <div class="info-section">
+          <h4 data-i18n="modal.revisions">Hardware &amp; Firmware Revisions</h4>
+          <ul class="fixes-list" id="modalFixes"></ul>
+        </div>
+
+        <div class="info-section">
+          <h4 data-i18n="modal.similar">Related &amp; Compatible Products</h4>
+          <div class="similar-products" id="modalSimilar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="#contact" class="btn btn-primary" id="modalInquireBtn" data-i18n="modal.inquire">Request Part Spec Sheet</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>&copy; 2026 Digimations. <span data-i18n="footer.rights">All rights reserved.</span></span>
+    <span data-i18n="footer.made">Athens, Greece</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
